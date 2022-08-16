@@ -13,12 +13,9 @@ import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) {
-
-
         UserService userService = new UserServiceImpl();
 
         userService.createUsersTable();
-
 
         userService.saveUser("Al", "Pacino", (byte) 82);
         userService.saveUser("Meryl", "Streep", (byte) 73);
@@ -30,9 +27,5 @@ public class Main {
         userService.cleanUsersTable();
 
         userService.dropUsersTable();
-
-
-
-
     }
 }
